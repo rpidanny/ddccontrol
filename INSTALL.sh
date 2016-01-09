@@ -5,6 +5,7 @@ sudo apt-get install -y xbacklight
 
 wget http://ftp.cn.debian.org/debian/pool/main/d/ddccontrol-db/ddccontrol-db_20061014-4_all.deb
 sudo dpkg -i ddccontrol-db_20061014-4_all.deb
+rm ddccontrol-db_20061014-4_all.deb
 
 MACHINE_TYPE=`uname -m`
 if [ ${MACHINE_TYPE} == 'x86_64' ]; then
