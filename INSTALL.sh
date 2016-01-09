@@ -30,3 +30,5 @@ else
   sudo dpkg -i libddccontrol0_0.4.2-11_i386.deb
   sudo dpkg -i ddccontrol_0.4.2-11_i386.deb
 fi
+
+echo "Installation Successful!!"
