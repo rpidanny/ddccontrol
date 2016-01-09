@@ -11,6 +11,7 @@ MACHINE_TYPE=`uname -m`
 if [ ${MACHINE_TYPE} == 'x86_64' ]; then
   # 64-bit stuff here
   echo "64-bit System"
+  echo "Downloading.."
   wget http://ftp.cn.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.2+dfsg1-3_amd64.deb
   wget http://ftp.cn.debian.org/debian/pool/main/p/pciutils/libpci3_3.2.1-3_amd64.deb
   wget http://ftp.cn.debian.org/debian/pool/main/d/ddccontrol/libddccontrol0_0.4.2-11_amd64.deb
@@ -19,6 +20,7 @@ if [ ${MACHINE_TYPE} == 'x86_64' ]; then
   sudo dpkg -i libpci3_3.2.1-3_amd64.deb
   sudo dpkg -i libddccontrol0_0.4.2-11_amd64.deb
   sudo dpkg -i ddccontrol_0.4.2-11_amd64.deb
+  echo "Deleting Downloads"
   rm libxml2_2.9.2+dfsg1-3_amd64.deb
   rm libpci3_3.2.1-3_amd64.deb
   rm libddccontrol0_0.4.2-11_amd64.deb
@@ -26,6 +28,7 @@ if [ ${MACHINE_TYPE} == 'x86_64' ]; then
 else
   # 32-bit stuff here
   echo "32-bit System"
+  echo "Downloading.."
   wget http://ftp.cn.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.2+dfsg1-3_i386.deb
   wget http://ftp.cn.debian.org/debian/pool/main/p/pciutils/libpci3_3.2.1-3_i386.deb
   wget http://ftp.cn.debian.org/debian/pool/main/d/ddccontrol/libddccontrol0_0.4.2-11_i386.deb
@@ -34,6 +37,7 @@ else
   sudo dpkg -i libpci3_3.2.1-3_i386.deb
   sudo dpkg -i libddccontrol0_0.4.2-11_i386.deb
   sudo dpkg -i ddccontrol_0.4.2-11_i386.deb
+  echo "Deleting Downloads"
   rm libxml2_2.9.2+dfsg1-3_i386.deb
   rm libpci3_3.2.1-3_i386.deb
   rm libddccontrol0_0.4.2-11_i386.deb
