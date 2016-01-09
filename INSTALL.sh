@@ -32,3 +32,8 @@ else
 fi
 
 echo "Installation Successful!!"
+echo ""
+echo ""
+echo "How To Use:"
+echo "External Monitor : sudo ddccontrol -p -r 0x10 -w brightness"
+echo "Laptop Display : xbacklight -set brightness"
