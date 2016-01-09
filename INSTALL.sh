@@ -18,6 +18,10 @@ if [ ${MACHINE_TYPE} == 'x86_64' ]; then
   sudo dpkg -i libpci3_3.2.1-3_amd64.deb
   sudo dpkg -i libddccontrol0_0.4.2-11_amd64.deb
   sudo dpkg -i ddccontrol_0.4.2-11_amd64.deb
+  rm libxml2_2.9.2+dfsg1-3_amd64.deb
+  rm libpci3_3.2.1-3_amd64.deb
+  rm libddccontrol0_0.4.2-11_amd64.deb
+  rm ddccontrol_0.4.2-11_amd64.deb
 else
   # 32-bit stuff here
   echo "32-bit System"
@@ -29,6 +33,10 @@ else
   sudo dpkg -i libpci3_3.2.1-3_i386.deb
   sudo dpkg -i libddccontrol0_0.4.2-11_i386.deb
   sudo dpkg -i ddccontrol_0.4.2-11_i386.deb
+  rm libxml2_2.9.2+dfsg1-3_i386.deb
+  rm libpci3_3.2.1-3_i386.deb
+  rm libddccontrol0_0.4.2-11_i386.deb
+  rm ddccontrol_0.4.2-11_i386.deb
 fi
 
 echo "Installation Successful!!"
